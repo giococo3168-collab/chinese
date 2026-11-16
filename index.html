@@ -76,8 +76,9 @@ details.set summary{padding:10px 14px;font-weight:600;cursor:pointer;min-height:
 .setg{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px 16px;padding:0 14px 14px}
 .setg label{font-size:14px;color:var(--mute);display:grid;gap:4px}
 .setg select{font:inherit;font-size:16px;min-height:42px;border:1.5px solid var(--line);border-radius:10px;background:var(--paper);color:var(--ink);padding:0 8px}
-.tab{position:fixed;left:0;right:0;bottom:0;z-index:10;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));background:var(--paper);border-top:2px solid var(--red);padding-bottom:env(safe-area-inset-bottom)}
-.tab button{border:0;background:none;min-height:64px;font-size:13px;font-weight:600;color:var(--mute);display:grid;place-items:center;padding:6px 0}
+.tab{position:fixed;left:0;right:0;bottom:0;z-index:10;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));background:var(--paper);border-top:2px solid var(--red);padding-bottom:env(safe-area-inset-bottom)}
+.tab a{text-decoration:none}
+.tab button,.tab a{border:0;background:none;min-height:64px;font-size:13px;font-weight:600;color:var(--mute);display:grid;place-items:center;padding:6px 0}
 .tab b{font:700 22px/1 "Noto Sans SC",sans-serif}
 .tab button[aria-current=true]{color:var(--red)}
 .quiz{max-width:640px;margin:16px auto 0}
@@ -153,6 +154,7 @@ details.set summary{padding:10px 14px;font-weight:600;cursor:pointer;min-height:
   <button data-go="w"><b>词</b>단어 2000</button>
   <button data-go="s"><b>话</b>회화 2000</button>
   <button data-go="quiz"><b>听</b>듣기 퀴즈</button>
+  <a href="talk/" aria-label="말하기 회화 연습"><b>说</b>말하기</a>
 </nav>
 
 <script>
